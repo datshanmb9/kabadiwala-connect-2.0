@@ -1,0 +1,8 @@
+Price model input probe, 2026-10-12 (read-only load of ai/pricing/price_ml/models/collector_price_model.joblib). quantity=1, weight_kg=2.0
+Laptop         Working      Bengaluru  -> 475.09 INR/kg
+Laptop         Non-Working  Bengaluru  -> 231.93 INR/kg
+Laptop         Good         Bengaluru  -> 222.51 INR/kg
+Laptop         Working      WARD-1     -> 462.52 INR/kg
+Smartphone     Working      Bengaluru  -> 199.48 INR/kg
+Mobile Phone   Working      Bengaluru  -> 328.80 INR/kg
+Refrigerator   Working      Bengaluru  -> 199.48 INR/kg

@@ -1,0 +1,99 @@
+D:\FSIH\kabadiwala-connect-2.0-SHARE(working)\backend\venv\Lib\site-packages\pytest_asyncio\plugin.py:208: PytestDeprecationWarning: The configuration option "asyncio_default_fixture_loop_scope" is unset.
+The event loop scope for asynchronous fixtures will default to the fixture caching scope. Future versions of pytest-asyncio will default the loop scope for asynchronous fixtures to function scope. Set the default fixture loop scope explicitly in order to avoid unexpected behavior in the future. Valid fixture loop scopes are: "function", "class", "module", "package", "session"
+
+........................................................................ [ 17%]
+........................................................................ [ 34%]
+........................................................................ [ 52%]
+........................................................................ [ 69%]
+........................................................................ [ 87%]
+....................................................                     [100%]
+============================== warnings summary ===============================
+app\main.py:110: 1 warning
+tests/integration/test_admin_api.py: 18 warnings
+tests/integration/test_auth_api.py: 12 warnings
+tests/integration/test_bids_api.py: 26 warnings
+tests/integration/test_classification_api.py: 18 warnings
+tests/integration/test_collector_lot_workflow.py: 4 warnings
+tests/integration/test_collectors_api.py: 8 warnings
+tests/integration/test_combined_edge_cases.py: 4 warnings
+tests/integration/test_complaints_api.py: 11 warnings
+tests/integration/test_cross_role_isolation.py: 5 warnings
+tests/integration/test_end_to_end_flow.py: 1 warning
+tests/integration/test_ewaste_api.py: 35 warnings
+tests/integration/test_ewaste_photo_upload.py: 2 warnings
+tests/integration/test_home_users_api.py: 9 warnings
+tests/integration/test_logistics_api.py: 10 warnings
+tests/integration/test_lot_completion_api.py: 12 warnings
+tests/integration/test_lot_recycler_privacy.py: 4 warnings
+tests/integration/test_lots_api.py: 12 warnings
+tests/integration/test_notifications_api.py: 7 warnings
+tests/integration/test_openapi_schema.py: 7 warnings
+tests/integration/test_payments_api.py: 12 warnings
+tests/integration/test_price_estimate_flow.py: 6 warnings
+tests/integration/test_price_trend_api.py: 7 warnings
+tests/integration/test_pricing_api.py: 6 warnings
+tests/integration/test_recyclers_api.py: 9 warnings
+tests/integration/test_rewards_api.py: 15 warnings
+tests/integration/test_rrr_centres_api.py: 10 warnings
+tests/integration/test_security_idempotency_scoping.py: 3 warnings
+tests/integration/test_security_input_validation.py: 12 warnings
+tests/integration/test_security_rbac_matrix.py: 4 warnings
+tests/integration/test_security_reward_redemption_race.py: 3 warnings
+tests/integration/test_translation_api.py: 3 warnings
+tests/integration/test_wards_api.py: 5 warnings
+  C:\Users\darsh\AppData\Local\Temp\kc_pv_9HYu\app\main.py:110: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+D:\FSIH\kabadiwala-connect-2.0-SHARE\backend\venv\Lib\site-packages\fastapi\applications.py:4681: 1 warning
+tests/integration/test_admin_api.py: 18 warnings
+tests/integration/test_auth_api.py: 12 warnings
+tests/integration/test_bids_api.py: 26 warnings
+tests/integration/test_classification_api.py: 18 warnings
+tests/integration/test_collector_lot_workflow.py: 4 warnings
+tests/integration/test_collectors_api.py: 8 warnings
+tests/integration/test_combined_edge_cases.py: 4 warnings
+tests/integration/test_complaints_api.py: 11 warnings
+tests/integration/test_cross_role_isolation.py: 5 warnings
+tests/integration/test_end_to_end_flow.py: 1 warning
+tests/integration/test_ewaste_api.py: 35 warnings
+tests/integration/test_ewaste_photo_upload.py: 2 warnings
+tests/integration/test_home_users_api.py: 9 warnings
+tests/integration/test_logistics_api.py: 10 warnings
+tests/integration/test_lot_completion_api.py: 12 warnings
+tests/integration/test_lot_recycler_privacy.py: 4 warnings
+tests/integration/test_lots_api.py: 12 warnings
+tests/integration/test_notifications_api.py: 7 warnings
+tests/integration/test_openapi_schema.py: 7 warnings
+tests/integration/test_payments_api.py: 12 warnings
+tests/integration/test_price_estimate_flow.py: 6 warnings
+tests/integration/test_price_trend_api.py: 7 warnings
+tests/integration/test_pricing_api.py: 6 warnings
+tests/integration/test_recyclers_api.py: 9 warnings
+tests/integration/test_rewards_api.py: 15 warnings
+tests/integration/test_rrr_centres_api.py: 10 warnings
+tests/integration/test_security_idempotency_scoping.py: 3 warnings
+tests/integration/test_security_input_validation.py: 12 warnings
+tests/integration/test_security_rbac_matrix.py: 4 warnings
+tests/integration/test_security_reward_redemption_race.py: 3 warnings
+tests/integration/test_translation_api.py: 3 warnings
+tests/integration/test_wards_api.py: 5 warnings
+  D:\FSIH\kabadiwala-connect-2.0-SHARE\backend\venv\Lib\site-packages\fastapi\applications.py:4681: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)  # ty: ignore[deprecated]
+
+tests/integration/test_price_trend_api.py: 25 warnings
+  C:\Users\darsh\AppData\Local\Temp\kc_pv_9HYu\tests\integration\test_price_trend_api.py:25: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    accepted_at = (datetime.utcnow() - timedelta(days=days_ago)).replace(microsecond=0)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+412 passed, 627 warnings in 263.45s (0:04:23)
+exit=0

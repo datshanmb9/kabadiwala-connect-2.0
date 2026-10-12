@@ -1,0 +1,50 @@
+Idempotency-Key coverage from the generated OpenAPI schema, 2026-10-12 (read-only import of app.main)
+total operations (incl. /health): 87
+state-changing operations: 45; requiring Idempotency-Key: 17; not requiring: 28
+REQUIRE KEY:
+  POST /api/v1/admin/lots/{lot_id}/complete
+  POST /api/v1/ai/classify/{submission_id}
+  POST /api/v1/bids
+  POST /api/v1/bids/{bid_id}/accept
+  POST /api/v1/bids/{bid_id}/cancel
+  POST /api/v1/bids/{bid_id}/cancel-acceptance
+  POST /api/v1/ewaste/submissions
+  POST /api/v1/ewaste/submissions/{submission_id}/accept
+  POST /api/v1/ewaste/submissions/{submission_id}/classify
+  POST /api/v1/ewaste/submissions/{submission_id}/handover
+  POST /api/v1/ewaste/submissions/{submission_id}/receive
+  POST /api/v1/logistics/{booking_id}/confirm-collection
+  POST /api/v1/logistics/{lot_id}/book
+  POST /api/v1/lots
+  POST /api/v1/lots/{lot_id}/publish
+  POST /api/v1/payments/{lot_id}/initiate
+  POST /api/v1/rewards/{reward_id}/redeem
+NO KEY:
+  PATCH /api/v1/admin/collectors/{user_id}
+  PATCH /api/v1/home-users/me
+  PATCH /api/v1/home-users/me/preferences
+  PATCH /api/v1/notifications/read-all
+  PATCH /api/v1/notifications/{notification_id}/read
+  POST /api/v1/admin/collectors
+  POST /api/v1/admin/collectors/{user_id}/status
+  POST /api/v1/admin/complaints/{complaint_id}/review
+  POST /api/v1/admin/recyclers/{user_id}/approve
+  POST /api/v1/admin/recyclers/{user_id}/reject
+  POST /api/v1/admin/rewards/compute
+  POST /api/v1/admin/rrr-centres/{user_id}/approve
+  POST /api/v1/admin/rrr-centres/{user_id}/reject
+  POST /api/v1/ai/classify-photo
+  POST /api/v1/auth/login
+  POST /api/v1/auth/logout
+  POST /api/v1/auth/refresh
+  POST /api/v1/complaints
+  POST /api/v1/ewaste/photos
+  POST /api/v1/home-users/me/deactivate
+  POST /api/v1/home-users/register
+  POST /api/v1/pricing/estimate
+  POST /api/v1/pricing/predict
+  POST /api/v1/recyclers/register
+  POST /api/v1/rrr-centres/register
+  POST /api/v1/translation/translate
+  POST /api/v1/translation/translate-batch
+  POST /api/v1/wards

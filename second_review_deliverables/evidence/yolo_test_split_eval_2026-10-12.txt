@@ -1,0 +1,41 @@
+YOLOv8n best.pt (MD5 ae52a1ae151ac702124db8509fdeeaec, identical to backend/ai/detection/weights/best.pt and ewaste_ml/runs/detect/ewaste_yolov8n5/weights/best.pt)
+evaluated on 2026-10-12 on a COPY of ewaste_ml/dataset/test (758 images), CPU, imgsz 640, Ultralytics 8.4.157.
+
+                   all        758        849      0.868      0.822      0.876      0.653
+               Battery         21         30      0.902      0.967      0.909      0.791
+                Boiler         28         30      0.874      0.463      0.695      0.368
+          Clothes-Iron         18         20      0.885      0.768      0.776      0.348
+        Coffee-Machine         20         33      0.749      0.816      0.833      0.442
+     Computer-Keyboard         19         21      0.912       0.81      0.854      0.686
+        Computer-Mouse         20         20          1      0.451      0.699      0.495
+       Cooling-Display         19         20      0.886          1      0.993      0.837
+            Desktop-PC         19         19          1      0.934      0.988      0.795
+  Digital-Oscilloscope         20         20      0.939          1      0.995      0.887
+                 Drone         23         23      0.841       0.87       0.94      0.646
+       Electric-Guitar         18         18      0.924      0.944      0.923      0.589
+   Electronic-Keyboard         16         19      0.857      0.842      0.887       0.65
+            Flashlight         21         21      0.918      0.905      0.978      0.847
+    Flat-Panel-Monitor         16         16      0.776      0.812      0.852      0.702
+         Flat-Panel-TV         23         23      0.674      0.696      0.804      0.506
+         Glucose-Meter         21         22      0.952      0.901       0.96      0.759
+                   HDD         23         24      0.837      0.792       0.87      0.753
+                Laptop         17         20      0.867      0.654      0.866      0.688
+             Microwave         21         23      0.724      0.739      0.793      0.611
+          Music-Player         24         24      0.997          1      0.995      0.843
+                  Oven         25         29      0.806      0.715      0.802      0.503
+                   PCB         20         20      0.982       0.95      0.953      0.791
+    Photovoltaic-Panel         20         20      0.982          1      0.995      0.715
+             Projector         28         28       0.91      0.786      0.863      0.595
+          Refrigerator         18         18      0.901      0.833      0.803      0.646
+          Rotary-Mower         11         11      0.892          1      0.965      0.712
+                Router         24         25          1      0.915      0.974      0.808
+                Server         18         18      0.824      0.778      0.894       0.62
+            Smartphone         27         33      0.834      0.697      0.794      0.653
+        Smoke-Detector         22         23      0.708      0.783      0.847      0.596
+           Street-Lamp         18         18      0.795      0.648      0.792      0.504
+     TV-Remote-Control         22         32      0.902      0.812      0.852      0.711
+         Telephone-Set         20         23      0.881      0.967      0.938      0.601
+       USB-Flash-Drive         31         32      0.772      0.781      0.817      0.549
+       Washing-Machine         25         27      0.847      0.815      0.865      0.651
+Model summary (fused): 72 layers, 3,012,863 parameters, 0 gradients, 8.1 GFLOPs
+Speed: 2.2ms preprocess, 59.1ms inference, 0.0ms loss, 0.8ms postprocess per image

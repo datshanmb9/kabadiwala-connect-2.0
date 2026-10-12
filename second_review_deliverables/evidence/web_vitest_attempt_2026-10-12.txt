@@ -1,0 +1,46 @@
+Vitest attempt on 2026-10-12 (temporary copies of recycler-web and admin-web). Both suites FAILED TO START (environment issue, not test failures):
+Node.js on this machine is v20.19.5; jsdom 30 / undici in node_modules call webidl.util.markAsUncloneable, unavailable in Node 20. Re-run with Node.js 22 LTS.
+
+== recycler-web
+ RUN  v5.0.0 C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/recycler-web
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+Vitest caught 10 unhandled errors during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+⎯⎯⎯⎯⎯⎯ Unhandled Error ⎯⎯⎯⎯⎯⎯⎯
+Error: [vitest-pool]: Failed to start forks worker for test files C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/recycler-web/src/pages/LoginPage.test.tsx.
+ ❯ node_modules/vitest/dist/chunks/index.B89dZ0-N.js:11469:94
+ ❯ processTicksAndRejections node:internal/process/task_queues:95:5
+ ❯ Pool.schedule node_modules/vitest/dist/chunks/index.B89dZ0-N.js:11469:5
+Caused by: TypeError: webidl.util.markAsUncloneable is not a function
+ ❯ new CacheStorage node_modules/undici/lib/web/cache/cachestorage.js:20:17
+ ❯ Object.<anonymous> node_modules/undici/index.js:179:25
+ ❯ Module._compile node:internal/modules/cjs/loader:1521:14
+ ❯ Module._extensions..js node:internal/modules/cjs/loader:1623:10
+ ❯ Module.load node:internal/modules/cjs/loader:1266:32
+ ❯ Module._load node:internal/modules/cjs/loader:1091:12
+ ❯ Module.require node:internal/modules/cjs/loader:1289:19
+ ❯ require node:internal/modules/helpers:182:18
+ ❯ Object.<anonymous> node_modules/jsdom/lib/api.js:12:33
+ ❯ Module._compile node:internal/modules/cjs/loader:1521:14
+
+== admin-web
+ RUN  v5.0.0 C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/admin-web
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+Vitest caught 6 unhandled errors during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+⎯⎯⎯⎯⎯⎯ Unhandled Error ⎯⎯⎯⎯⎯⎯⎯
+Error: [vitest-pool]: Failed to start forks worker for test files C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/admin-web/src/pages/LoginPage.test.tsx.
+ ❯ node_modules/vitest/dist/chunks/index.B89dZ0-N.js:11469:94
+ ❯ processTicksAndRejections node:internal/process/task_queues:95:5
+ ❯ Pool.schedule node_modules/vitest/dist/chunks/index.B89dZ0-N.js:11469:5
+Caused by: TypeError: webidl.util.markAsUncloneable is not a function
+ ❯ new CacheStorage node_modules/undici/lib/web/cache/cachestorage.js:20:17
+ ❯ Object.<anonymous> node_modules/undici/index.js:179:25
+ ❯ Module._compile node:internal/modules/cjs/loader:1521:14
+ ❯ Module._extensions..js node:internal/modules/cjs/loader:1623:10
+ ❯ Module.load node:internal/modules/cjs/loader:1266:32
+ ❯ Module._load node:internal/modules/cjs/loader:1091:12
+ ❯ Module.require node:internal/modules/cjs/loader:1289:19
+ ❯ require node:internal/modules/helpers:182:18
+ ❯ Object.<anonymous> node_modules/jsdom/lib/api.js:12:33
+ ❯ Module._compile node:internal/modules/cjs/loader:1521:14

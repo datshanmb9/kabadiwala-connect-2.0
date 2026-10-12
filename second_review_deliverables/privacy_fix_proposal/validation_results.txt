@@ -1,0 +1,7 @@
+Validation on a temporary copy of backend/ (2026-10-12). Original source NOT modified.
+
+1) New tests BEFORE fix: 2 failed (both recycler tests), 2 passed (owner/admin)
+   leaked fields: collection_photo_file_id, collection_ts, collector_id, collector_lat, collector_lng, home_user_id
+2) New tests AFTER fix: 4 passed
+3) Full suite AFTER fix:
+412 passed, 627 warnings in 235.63s (0:03:55)

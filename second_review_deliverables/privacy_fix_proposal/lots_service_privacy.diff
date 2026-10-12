@@ -1,0 +1,45 @@
+--- service.py.orig	2026-10-12 23:16:49.925618100 +0530
++++ service.py.proposed	2026-10-12 23:16:49.995453900 +0530
+@@ -172,6 +172,24 @@
+     return docs
+ 
+ 
++# Recyclers bid on what a lot contains, not on who handed it over or where.
++# item_details also carries the home user's ID and the handover GPS point,
++# time and photo (taken within MAX_HANDOVER_DISTANCE_METERS of the
++# household), which only the lot owner and the Government Admin may see
++# (architecture Section 17). An allow-list keeps any field added to
++# item_details later from reaching recyclers by default.
++_RECYCLER_ITEM_FIELDS = ("submission_id", "actual_weight_kg")
++
++
++def _recycler_view(lot: dict) -> dict:
++    view = dict(lot)
++    view["item_details"] = [
++        {field: item.get(field) for field in _RECYCLER_ITEM_FIELDS}
++        for item in lot.get("item_details", [])
++    ]
++    return view
++
++
+ async def list_listed_for_bidding(current_user: dict) -> list[dict]:
+     """Marketplace-wide, not ward-scoped — every APPROVED recycler can see
+     every lot currently open for bidding, regardless of which RRR/ward
+@@ -181,7 +199,7 @@
+     docs = await lots_repo.list_listed_for_bidding()
+     for d in docs:
+         d.pop("_id", None)
+-    return docs
++    return [_recycler_view(d) for d in docs]
+ 
+ 
+ async def get_lot(lot_id: str, current_user: dict) -> dict:
+@@ -214,6 +232,8 @@
+ 
+     lot.pop("_id", None)
+     lot["price_estimate"] = await _lot_price_estimate(lot)
++    if is_recycler_viewer:
++        return _recycler_view(lot)
+     return lot
+ 
+ 

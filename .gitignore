@@ -1,0 +1,48 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+.idea/
+.vscode/
+backend/uploads/
+
+# Secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
+.venv/
+venv/
+/backend/translation_validation_venv/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+
+# Node.js
+node_modules/
+
+# Build outputs and caches
+build/
+dist/
+.next/
+.pytest_cache/
+.mypy_cache/
+runs/
+.dart_tool/
+.gradle/
+*.apk
+*.aab
+*.zip
+
+# IDE and local settings
+.vscode/
+.idea/
+
+# Logs
+*.log

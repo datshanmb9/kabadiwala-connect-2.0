@@ -1,0 +1,12 @@
+# Isolated IndicTrans2 environment; keep production requirements.txt unchanged.
+transformers==4.44.2
+torch==2.5.1
+sentencepiece==0.2.0
+indic-nlp-library==0.91
+nltk==3.9.1
+sacremoses==0.1.1
+mosestokenizer==1.2.1
+accelerate==1.15.0
+safetensors==0.8.0
+huggingface-hub==0.36.2
+git+https://github.com/VarunGumma/IndicTransToolkit.git

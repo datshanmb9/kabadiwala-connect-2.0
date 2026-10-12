@@ -1,0 +1,9 @@
+Training hardware evidence, 2026-10-12
+Training run events file host name: WIN-J3URQFPVSP3
+This machine host name: WIN-J3URQFPVSP3
+nvidia-smi on this machine:
+name, memory.total [MiB]
+NVIDIA GeForce RTX 3050 Laptop GPU, 4096 MiB
+args.yaml device: device: 0
+Training venv: torch-2.11.0+cu128.dist-info ultralytics-8.3.40.dist-info 
+Note: same host name as the training log; the GPU in the machine at training time is assumed unchanged (author to confirm).

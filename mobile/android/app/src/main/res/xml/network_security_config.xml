@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Phase 12: scoped cleartext-HTTP allowance for the local demo backend
+  ONLY — not a blanket cleartext policy. Android 9+ (API 28+) blocks
+  plaintext HTTP by default; this app's mock-payment/mock-AI backend has
+  no TLS anywhere (deliberately, for a local demo), so without this file
+  every API call from a release build would be silently blocked by the
+  OS. Every other domain still uses the platform default (HTTPS only,
+  system certificate validation) — see the base-config below.
+
+  Two specific hosts are allow-listed, matching the two documented ways
+  to run this app against the local backend (see
+  docs/APK_BUILD_GUIDE.md):
+  - 10.0.2.2   — the Android emulator's fixed alias for the host
+                 machine's loopback. Always safe to leave listed; it
+                 only resolves to anything inside an emulator.
+  - 10.74.38.76 — this development machine's current LAN IPv4 address,
+                 needed only for a real physical device on the same
+                 Wi-Fi/LAN. This value is specific to this machine/
+                 network and will need updating (see the build guide)
+                 if the host machine's IP changes.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">10.0.2.2</domain>
+        <domain includeSubdomains="false">10.74.38.76</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

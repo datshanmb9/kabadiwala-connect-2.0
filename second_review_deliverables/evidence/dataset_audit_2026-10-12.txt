@@ -1,0 +1,12 @@
+Dataset audit, 2026-10-12, read-only on D:/FSIH/ewaste_ml/ewaste_ml/dataset (MD5 of every image; YOLO label files)
+images per split: {'train': 4990, 'valid': 1415, 'test': 758} total 7163
+label files 7163, boxes 8044, images with >1 box 584 (8.2%)
+distinct image hashes: 7080 | extra duplicate files: 83
+within-split extra duplicates: {'train': 71, 'valid': 6, 'test': 1}
+test images identical to a train image: 0
+test images identical to a valid image: 5
+valid images identical to a train image: 0
+median box area (fraction of image), all boxes: 0.292
+Straight-Tube-Fluorescent-Lamp: median area 0.106, median long/short side ratio 2.01, boxes 268
+Boiler: median area 0.164, median long/short side ratio 1.53, boxes 209
+Computer-Mouse: median area 0.344, median long/short side ratio 1.35, boxes 203

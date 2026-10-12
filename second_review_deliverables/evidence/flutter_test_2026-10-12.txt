@@ -1,0 +1,35 @@
+Flutter test run on 2026-10-12 against a temporary copy of mobile/lib + mobile/test.
+
+00:11 +153: All tests passed!
+exit=0
+
+00:09 +125: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:09 +126: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:09 +127: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:09 +128: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:09 +129: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:09 +130: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:09 +131: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:10 +132: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:10 +133: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:10 +134: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:10 +135: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:10 +136: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:10 +137: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:10 +138: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:10 +139: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:10 +140: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:10 +141: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen login screen opens in English and switches immediately both ways
+00:10 +142: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/screens/login_screen_test.dart: shows an inline error banner when login fails
+00:10 +143: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen Kannada chosen before login applies to the Home User app; no language row on dashboard
+00:10 +144: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen Kannada chosen before login applies to the Home User app; no language row on dashboard
+00:10 +145: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/screens/login_screen_test.dart: tapping "Register" navigates to the registration screen
+00:11 +146: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen Kannada chosen before login applies to the Collector app; no language row on dashboard
+00:11 +147: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen Kannada chosen before login applies to the Collector app; no language row on dashboard
+00:11 +148: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/screens/login_screen_test.dart: login portal selector (Phase 4 fix) selecting Collector switches the heading, hides Register, and relabels the username field
+00:11 +149: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen English (default) applies after login too
+00:11 +150: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/screens/login_screen_test.dart: login portal selector (Phase 4 fix) switching back to Home User restores the original heading and Register link
+00:11 +151: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen choice survives a simulated app restart
+00:11 +152: C:/Users/darsh/AppData/Local/Temp/kc_ft_JtQi/mobile/test/features/translation/app_localization_test.dart: language selection on the login / role-selection screen choice survives a simulated app restart
+00:11 +153: All tests passed!
+exit=0
